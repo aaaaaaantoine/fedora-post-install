@@ -31,7 +31,7 @@ Terra:
 * Accédez au centre de logiciels et cliquez sur <Mettre à jour>. Ou en ligne de commande:
 * `sudo dnf update`
 * Redémarrez.
-* 
+
 ## Installation
 * `sudo dnf install abiword alacarte celluloid deja-dup epiphany gnome-music gnucash gnumeric kodi papers secrets virt-manager`
 
