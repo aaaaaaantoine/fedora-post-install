@@ -1,8 +1,8 @@
 <div align="center">
 <h1 align="center">
-<br>fedora-post-install
+<br>Fedora Post-Install
 </h1>
-<h3>◦ Développé avec les logiciels et outils ci-dessous.</h3>
+<h3>Développé avec les logiciels et outils ci-dessous.</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash" />
@@ -26,3 +26,8 @@ RPM Fusion:
 
 Terra:
 * `sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release`
+
+## Mises à jour
+* Accédez au centre de logiciels et cliquez sur <Mettre à jour>. Ou en ligne de commande:
+* `sudo dnf update`
+* Redémarrez.
