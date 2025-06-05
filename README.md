@@ -16,3 +16,13 @@
 </div>
 
 ---
+
+Choses à faire après l'installation de Fedora 42
+
+## RPM Fusion & Terra
+
+RPM Fusion:
+* `sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm`
+
+Terra:
+* `sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release`
