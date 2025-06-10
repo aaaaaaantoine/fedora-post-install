@@ -41,9 +41,14 @@ secrets \
 virt-manager
 ```
 
-## Déinstallation
-* `sudo dnf remove evince libreoffice-* firefox gnome-characters gnome-boxes gnome-font-viewer gnome-logs gnome-maps mediawriter ptyxis rhythmbox simple-scan snapshot totem`
+* Déinstallation
+```sh
+sudo dnf remove evince libreoffice-* firefox gnome-characters gnome-boxes gnome-font-viewer gnome-logs gnome-maps mediawriter ptyxis rhythmbox simple-scan snapshot totem
+```
 
-## Flatpak
-* `sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
-* `sudo flatpak install eartag podcasts shortwave`
+* Flatpak
+```sh
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+sudo flatpak install eartag podcasts shortwave
+```
