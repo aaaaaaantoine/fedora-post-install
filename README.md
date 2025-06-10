@@ -23,6 +23,8 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 ## Logiciels
 
 * Installation
+
+j'installe toujours ce que j'ai uniquement besoin sans superflus.
 ```sh
 sudo dnf install -y \
 abiword \
@@ -45,6 +47,8 @@ sudo flatpak install eartag podcasts shortwave
 ```
 
 * Déinstallation
+
+En tant que pratiquant du minimalisme, je ne garde jamais aucun logiciel que n'utilise pas. C'est une inutile, tout en prenant de la mémoire et du stockage qui serait utile ailleurs.
 ```sh
 sudo dnf remove -y \
 evince \
