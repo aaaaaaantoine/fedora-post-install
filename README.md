@@ -6,8 +6,8 @@ Choses à faire après l'installation de Fedora 42
 
 * RPM Fusion:
 ```sh
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
 * Terra:
@@ -43,12 +43,25 @@ virt-manager
 
 * Déinstallation
 ```sh
-sudo dnf remove evince libreoffice-* firefox gnome-characters gnome-boxes gnome-font-viewer gnome-logs gnome-maps mediawriter ptyxis rhythmbox simple-scan snapshot totem
+sudo dnf remove -y \
+evince \
+libreoffice-* \
+firefox \
+gnome-characters \
+gnome-boxes \
+gnome-font-viewer \
+gnome-logs \
+gnome-maps \
+mediawriter \
+ptyxis \
+rhythmbox \
+simple-scan \
+snapshot \
+totem
 ```
 
 * Flatpak
 ```sh
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
 sudo flatpak install eartag podcasts shortwave
 ```
