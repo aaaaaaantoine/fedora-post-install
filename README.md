@@ -16,7 +16,7 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 ```
 
 ## Mises à jour
-* Accédez au centre de logiciels et cliquez sur <Mettre à jour>. Ou en ligne de commande:
+* Accédez au centre de logiciels et cliquez sur "Mettre à jour". Ou en ligne de commande:
 * `sudo dnf update`
 * Redémarrez.
 
@@ -63,10 +63,7 @@ snapshot \
 totem
 ```
 
-## H/W Video Acceleration
-* Helps decrease load on the CPU when watching videos online by alloting the rendering to the dGPU/iGPU. Quite helpful in increasing battery backup on laptops.
-
-### H/W Video Decoding with VA-API 
+### H/W Décodage Vidéo via VA-API 
 * `sudo dnf install ffmpeg-libs libva libva-utils`
 
 <details>
@@ -92,5 +89,5 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 </details>
 
 
-## Set Hostname
+## Fixer un nom d'hôte
 * `hostnamectl set-hostname Fedora`
