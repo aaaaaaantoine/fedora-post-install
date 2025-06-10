@@ -67,8 +67,19 @@ snapshot \
 totem
 ```
 
-### H/W Décodage Vidéo via VA-API 
-* `sudo dnf install ffmpeg-libs libva libva-utils`
+## Media Codecs
+* Install these to get proper multimedia playback.
+```sh
+sudo dnf4 group install multimedia
+sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
+sudo dnf upgrade @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf group install -y sound-and-video 
+```
+
+* H/W Décodage Vidéo via VA-API 
+```sh
+sudo dnf install ffmpeg-libs libva libva-utils
+```
 
 <details>
 <summary>Intel</summary>
