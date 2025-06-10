@@ -1,4 +1,4 @@
-Fedora 42 Post-Install
+# Fedora 42 Workstation
 
 Choses à faire après l'installation de Fedora 42
 
@@ -39,6 +39,9 @@ kodi \
 papers \
 secrets \
 virt-manager
+
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install eartag podcasts shortwave
 ```
 
 * Déinstallation
@@ -58,10 +61,4 @@ rhythmbox \
 simple-scan \
 snapshot \
 totem
-```
-
-* Flatpak
-```sh
-sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-sudo flatpak install eartag podcasts shortwave
 ```
