@@ -1,4 +1,4 @@
-# Guide post-install Fedora 42 Workstation
+# Guide Fedora 42 Workstation
 
 Choses à faire après l'installation de Fedora 42 Workstation Édition
 
