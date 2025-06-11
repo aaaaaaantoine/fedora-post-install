@@ -39,8 +39,7 @@ gnucash \
 gnumeric \
 kodi \
 papers \
-secrets \
-virt-manager
+secrets
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install eartag podcasts shortwave
@@ -103,6 +102,11 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 ```
 </details>
 
+## QEMU/KVM
+```
+sudo dnf install -y virt-manager
+sudo usermod -a -G libvirt antoine
+```
 
 ## Fixer un nom d'hôte
 * `hostnamectl set-hostname Fedora`
