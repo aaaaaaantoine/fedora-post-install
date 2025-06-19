@@ -2,7 +2,7 @@
 
 Choses à faire après l'installation de Fedora 42 Workstation Édition
 
-## RPM Fusion & Terra
+### RPM Fusion & Terra
 
 * RPM Fusion:
 ```sh
@@ -15,12 +15,12 @@ sudo dnf install -y https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfr
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
 
-## Mises à jour
+### Mises à jour
 * Accédez au centre de logiciels et cliquez sur "Mettre à jour". Ou en ligne de commande:
 * `sudo dnf update`
 * Redémarrez.
 
-## Logiciels
+### Logiciels
 
 * Installation
 
@@ -66,7 +66,7 @@ snapshot \
 totem
 ```
 
-## Media Codecs
+### Media Codecs
 * Install these to get proper multimedia playback.
 ```sh
 sudo dnf4 group install multimedia
@@ -102,11 +102,47 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 ```
 </details>
 
-## QEMU/KVM
+### QEMU/KVM
 ```
 sudo dnf install -y virt-manager
 sudo usermod -a -G libvirt antoine
 ```
 
-## Fixer un nom d'hôte
+### Fixer un nom d'hôte
 * `hostnamectl set-hostname Fedora`
+
+---
+
+## Processus de mise à niveau
+
+### Mettre à jour les paquets actuels :
+```sh
+sudo dnf upgrade --refresh
+```
+
+
+### Installer le plugin DNF de mise à niveau du système : 
+```sh
+sudo dnf install -y dnf-plugin-system-upgrade
+```
+
+
+### Télécharger la nouvelle version de Fedora :
+```sh
+sudo dnf system-upgrade download --releasever=43
+
+• En cas de problème de résolution de dépendance :
+sudo dnf system-upgrade download --releasever=43 --allowerasing
+```
+
+
+### Démarrer la mise à niveau :
+```sh
+sudo dnf system-upgrade reboot
+```
+
+
+### Nettoyage (facultatif) :
+```sh
+sudo dnf autoremove
+```
