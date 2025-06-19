@@ -113,7 +113,7 @@ sudo usermod -a -G libvirt antoine
 
 ---
 
-## Processus de mise à niveau
+# Processus de mise à niveau
 
 ### Mettre à jour les paquets actuels :
 ```sh
