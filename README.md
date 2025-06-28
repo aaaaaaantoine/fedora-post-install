@@ -50,8 +50,20 @@ sudo flatpak install eartag podcasts shortwave
 En tant que pratiquant du minimalisme, je ne garde jamais aucun logiciel que n'utilise pas. C'est une inutile, tout en prenant de la mémoire et du stockage qui serait utile ailleurs.
 ```sh
 sudo dnf remove -y \
+evince \
 libreoffice-* \
-firefox
+firefox \
+gnome-characters \
+gnome-boxes \
+gnome-font-viewer \
+gnome-logs \
+gnome-maps \
+mediawriter \
+ptyxis \
+rhythmbox \
+simple-scan \
+snapshot \
+totem
 ```
 
 ### Media Codecs
