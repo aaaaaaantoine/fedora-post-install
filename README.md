@@ -1,6 +1,6 @@
-# Guide Fedora 42 KDE
+# Guide Fedora 42 Workstation
 
-Choses à faire après l'installation de Fedora 42 KDE Édition
+Choses à faire après l'installation de Fedora 42 Workstation Édition
 
 ### RPM Fusion & Terra
 
