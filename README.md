@@ -1,8 +1,8 @@
-# Guide Fedora 42 Workstation
+# Guide Fedora Workstation
 
-Choses à faire après l'installation de Fedora 42 Workstation Édition
+Choses à faire après l'installation de Fedora Workstation Édition
 
-### RPM Fusion & Terra
+### RPM Fusion
 
 * RPM Fusion:
 ```sh
