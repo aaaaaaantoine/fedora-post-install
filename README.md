@@ -100,7 +100,7 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 ### QEMU/KVM
 ```
 sudo dnf install -y virt-manager
-sudo usermod -a -G libvirt antoine
+sudo usermod -a -G libvirt $USER
 ```
 
 ### Fixer un nom d'hôte
