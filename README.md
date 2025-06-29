@@ -10,11 +10,6 @@ sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rel
 sudo dnf install -y https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
-* Terra:
-```sh
-sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-```
-
 ### Mises à jour
 * Accédez au centre de logiciels et cliquez sur "Mettre à jour". Ou en ligne de commande:
 * `sudo dnf update`
@@ -24,7 +19,6 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 
 * Installation
 
-j'installe toujours ce que j'ai uniquement besoin sans superflus.
 ```sh
 sudo dnf install -y \
 abiword \
@@ -47,7 +41,6 @@ sudo flatpak install eartag podcasts shortwave
 
 * Déinstallation
 
-En tant que pratiquant du minimalisme, je ne garde jamais aucun logiciel que n'utilise pas. C'est une inutile, tout en prenant de la mémoire et du stockage qui serait utile ailleurs.
 ```sh
 sudo dnf remove -y \
 evince \
@@ -67,7 +60,7 @@ totem
 ```
 
 ### Media Codecs
-* Install these to get proper multimedia playback.
+
 ```sh
 sudo dnf4 group install multimedia
 sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
@@ -75,7 +68,8 @@ sudo dnf upgrade @multimedia --setopt="install_weak_deps=False" --exclude=Packag
 sudo dnf group install -y sound-and-video 
 ```
 
-* H/W Décodage Vidéo via VA-API 
+* H/W Décodage Vidéo via VA-API
+
 ```sh
 sudo dnf install ffmpeg-libs libva libva-utils
 ```
