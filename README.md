@@ -33,7 +33,8 @@ gnucash \
 gnumeric \
 kodi \
 papers \
-secrets
+secrets \
+virt-manager
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install eartag podcasts shortwave
@@ -103,7 +104,20 @@ sudo usermod -a -G libvirt antoine
 ```
 
 ### Fixer un nom d'hôte
-* `hostnamectl set-hostname Fedora`
+
+```sh
+hostnamectl set-hostname fedora-ws
+````
+
+### Résolution GDM
+* Si comme moi vous avez un écran qui affiche une mauvaise qualité d'image, reconnu de base en 1080p mais que vous étes 'obligé' de réduire en 720p (ou autre) ? Alors faites ceci:
+
+```sh
+sudo cp -f ~/.config/monitors.xml ~gdm/.config/monitors.xml
+sudo chown $(id -u gdm):$(id -g gdm) ~gdm/.config/monitors.xml
+sudo restorecon ~gdm/.config/monitors.xml
+sudo reboot
+``` 
 
 ---
 
