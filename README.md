@@ -110,7 +110,7 @@ hostnamectl set-hostname fedora-ws
 ````
 
 ### Résolution GDM
-* Si comme moi vous avez un écran qui affiche une mauvaise qualité d'image, reconnu de base en 1080p mais que vous étes 'obligé' de réduire en 720p (ou autre) ? Alors faites ceci:
+* Si comme moi vous avez un écran qui affiche une mauvaise qualité d'image, reconnu de base en 1080p mais que vous étes 'obligé' de réduire en 720p (ou autre) ? Alors faites ceci pour que lors de la connection GDM suive :
 
 ```sh
 sudo cp -f ~/.config/monitors.xml ~gdm/.config/monitors.xml
