@@ -24,7 +24,7 @@ sudo dnf install -y kodi
 sudo hostnamectl set-hostname fedora-kde
 
 ## Intel Video
-#sudo dnf swap libva-intel-media-driver intel-media-driver --allowerasing
-#sudo dnf install -y libva-intel-driver
+sudo dnf swap libva-intel-media-driver intel-media-driver --allowerasing
+sudo dnf install -y libva-intel-driver
 
 exit 0
