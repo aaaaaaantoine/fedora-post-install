@@ -4,6 +4,9 @@
 sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install -y https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
+## Remove
+sudo dnf remove -y firefox* gimp* libreoffice*
+
 ## Upgrade
 sudo dnf -y upgrade
 
@@ -18,12 +21,12 @@ sudo dnf install -y virt-manager
 sudo usermod -a -G libvirt $USER
 
 ## Install Software
-sudo dnf install -y kodi
+sudo dnf install -y kodi systemd-networkd
 
-## hostname
+## HostnameCtl
 sudo hostnamectl set-hostname fedora-kde
 
-## Intel Video
+## Intel Video Driver
 sudo dnf swap libva-intel-media-driver intel-media-driver --allowerasing
 sudo dnf install -y libva-intel-driver
 
