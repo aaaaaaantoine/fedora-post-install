@@ -1,6 +1,6 @@
-# Guide Fedora Workstation
+# Guide Fedora
 
-Choses à faire après l'installation de Fedora Workstation Édition
+Choses à faire après l'installation de Fedora
 
 ### RPM Fusion
 
