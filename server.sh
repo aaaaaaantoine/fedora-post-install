@@ -4,8 +4,9 @@
 sudo dnf -y upgrade
 
 ## Libvirt Qemu/KVM
-sudo dnf install -y cockpit-machines cockpit-podman
+sudo dnf install -y cockpit-machines cockpit-podman libvirt
 sudo usermod -aG libvirt $USER
+sudo systemctl enable --now libvirtd
 
 ## Install Software
 sudo dnf install -y systemd-networkd
