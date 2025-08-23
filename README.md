@@ -7,6 +7,11 @@
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/fedora-post-install/main/kde.sh)" 
 ```
 
+* Fedora Workstation personnalisé.
+```sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/fedora-post-install/main/workstation.sh)" 
+```
+
 * Fedora Server prêt à l'emploi.
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/fedora-post-install/main/server.sh)" 
