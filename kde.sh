@@ -5,7 +5,17 @@ sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rel
 sudo dnf install -y https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 ## Remove
-sudo dnf remove -y firefox* gimp* libreoffice*
+sudo dnf remove -y \
+kamoso \
+kmouth \
+kcharselect \
+kfind \
+neochat \
+skanpage \
+libreoffice* \
+firefox* \
+kolourpaint* \
+qrca
 
 ## Upgrade
 sudo dnf -y upgrade
@@ -21,7 +31,28 @@ sudo dnf install -y virt-manager
 sudo usermod -a -G libvirt $USER
 
 ## Install Software
-sudo dnf install -y kodi systemd-networkd
+sudo dnf install -y \
+calligra \
+calligra-l10n \
+calligra-karbon \
+calligra-sheets \
+calligra-stage \
+calligra-words \
+calligraplan \
+falkon \
+kate \
+kdenlive \
+kdevelop \
+kexi 
+kid3 \
+kodi \
+konversation \
+krita \
+ktorrent \
+kwalletmanager \
+kwave \
+systemd-networkd \
+yakuake
 
 ## HostnameCtl
 sudo hostnamectl set-hostname fedora-kde
